@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/bootstrap.css" />
+    <link rel="stylesheet" href="style/angular-notify.css" />
+    <title>Social Network</title>
+</head>
+<body ng-app="socialNetworkApp">
+
+<div id="wrapper">
+    <div class="logo">
+        <a href="#"><img src="imgs/beer.png"/></a>
+        <span>Cool Story Bro</span>
+    </div>
+
+    <div ng-controller="LoginController">
+    <header ng-if="isLogged()" class="header" id="header">
+        <div class="image-container">
+            <img ng-src="{{userData.getSessionStorage().picture | searchImage}} " class="thumbnail" />
+        </div>
+        <div class="summary-container">
+            <h2>Hello, {{userData.getSessionStorage().name}}!</h2>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/edit-user">Edit profile</a></li>
+                    <li><a href="#/add-post">Post</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a class="navbar-brand"><u>{{userData.getSessionStorage().username}}</u></a></li>
+                    <li><a href="" ng-click="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    </div>
+
+    <section class="main" id="main" ng-view="" >
+
+    </section>
+</div>
+
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-notify.js"></script>
+<script src="libs/angular/angular-route.js"></script>
+<script src="libs/angular/angular-resource.js"></script>
+<script src="libs/jquery-2.1.1.js"></script>
+<script src="libs/jquery.noty.packaged.min.js"></script>
+<script src="scripts/fileReader.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/service/authData.js"></script>
+<script src="scripts/service/authPosts.js"></script>
+<script src="scripts/controllers/LoginController.js"></script>
+<script src="scripts/controllers/RegisterController.js"></script>
+<script src="scripts/controllers/PostsController.js"></script>
+<script src="scripts/controllers/AddPostsController.js"></script>
+<script src="scripts/controllers/EditProfileController.js"></script>
+<script src="scripts/controllers/PostImageHover.js"></script>
+<script src="scripts/directives/image-filter.js"></script>
+
+
+</body>
+</html>

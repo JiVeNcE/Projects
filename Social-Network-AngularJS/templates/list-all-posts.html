@@ -1,0 +1,19 @@
+<div ng-if="loading" >
+    <div ng-if="ready" ng-include="'templates/user/user-hover-box.html'"></div>
+    <div ng-if="!ready" ng-include="'templates/user/loading.html'"></div>
+</div>
+<article class="post well" ng-repeat="post in allPosts.results">
+    <header class="post-header">
+
+        <div class="post-image">
+            <img class="mini-thumbnail" ng-src="{{post.createdBy.picture | searchImage}}">
+        </div>
+        <div class="post-info">
+            <p><a href="#" class="profile-link"  ng-mouseover="userHover(post.createdBy.objectId)" ng-mouseleave="hoverOut()">{{post.createdBy.name}}</a> made a post</p>
+            <p>on <time>{{post.createdAt | date:'dd-MMM-yyyy HH:mm' }}</time></p>
+        </div>
+    </header>
+    <section class="post-content">
+        <p>{{post.content}}</p>
+    </section>
+</article>
