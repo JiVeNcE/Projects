@@ -253,7 +253,6 @@
         });
     };
 
-
     carouselSlides.prototype.slideLeft = function(numberOfSlides)
     {
         var parent = this;
