@@ -1,0 +1,481 @@
+body, html {
+   margin: 0;
+}
+
+h1, h2, h3 {
+    color: #28b7d7;
+    margin: 0;
+}
+
+.container {
+    margin: auto;
+    width: 1180px;
+    height: 100%;
+}
+
+.pop-up {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 29%;
+}
+.pop-up a {
+    background-color: #0a4857;
+    padding: 10px 160px 10px 160px;
+    width: 200px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 19px;
+    text-decoration: none;
+    color: #e7e7e7;
+}
+.pop-up a:hover {
+    background-color: #1cafcf;
+    color: #ffffff;
+}
+
+#Yt {
+    background: transparent;
+    border: 1px solid #8E8E8E;
+    border-radius: 3px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top:0;
+    z-index:50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(142, 142, 142, .8);
+    overflow: scroll;
+}
+
+#expanded-image-wrapper {
+    width: 606px;
+    height:100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -315px;
+    margin-top: -310px;
+    z-index: 60;
+}
+
+#close-button {
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     top: -12px;
+     border-radius: 50%;
+     right: -32px;
+     cursor:pointer;
+     background-color: #ffffff;
+     border: 1px solid #e7e7e7;
+     font-family: Tahoma,Arial,sans-serif;
+     font-size: 13px;
+     line-height: 20px;
+     font-weight: 700;
+     font-style: normal;
+     color: #b11616;
+ }
+ 
+#close-button span {
+   padding-left: 6px;
+}
+
+#expand-video-container {
+    width:100%;
+    height: auto;
+    z-index:70;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.srcInput {
+    width: 100%;
+    height: 25px;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid #efefed;
+    color: #CCC;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.buttons div {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+}
+
+.buttons .left-buttons  {
+    float: left;
+}
+
+.buttons .right-buttons {
+    float: right;
+}
+
+.buttons .left-buttons a {
+    text-decoration: none;
+    width: 10%;
+    color: #4d545e;
+    font-size: 12px;
+    padding-left: 25px;
+    line-height: 3.0em;
+    position: relative;
+    padding-right: 19px;
+}
+
+.video-like-button:before {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    background:  url("../images/heart.png") 0 -18% no-repeat;
+    width: 50%;
+    height: 400%;
+}
+
+.video-share-button:before {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    background:  url("../images/share.png") 0 -14% no-repeat;
+    width: 50%;
+    height: 400%;
+}
+
+.right-buttons a {
+    text-decoration: none;
+    background-color: #363636;
+    padding: 7px 15px 7px 15px;
+    color: #ffffff;
+    font-size: 10px;
+    border-radius: 4px;
+    line-height: 2.5em;
+}
+
+.right-buttons a:hover {
+    background-color: #ea445b;
+}
+
+.comment-field {
+    clear: both;
+    width: 100%;
+}
+.form-control{
+    width: 96%;
+    height: 15px;
+    border-radius: 2px;
+    background-color: transparent;
+    border: 1px solid #efefed;
+    color: #CCC;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
+.comments {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.comment-author {
+   height: 50px;
+}
+
+.comment-author div{
+    display: inline-block;
+}
+
+.author-image {
+     width: 10%;
+     height: 30px;
+     vertical-align: top;
+ }
+.author-image span {
+    background: url("../images/user-img.png") 80% 0 no-repeat ;
+    width: 4px;
+    border-radius: 50%;
+    padding: 17px 17px 17px 31px;
+    line-height: 2.5em;
+}
+
+.author-detail {
+    width: 60%;
+}
+
+.text-muted {
+    font-size: 12px;
+    color: #b4b4b4;
+}
+
+
+div.comment-content {
+    height:150px;
+    direction: ltr;
+
+}
+.comment-content {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.comment-content-button a {
+    text-decoration: none;
+    width: 10%;
+    color: #4d545e;
+    font-size: 12px;
+    padding-left: 30px;
+    line-height: 3.0em;
+    position: relative;
+}
+
+.comment-content-button .like:before {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    background:  url("../images/heart.png") 80% -17% no-repeat;
+    width: 50%;
+    height: 400%;
+}
+
+.comment-content-button .share:before {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    background:  url("../images/share.png") 60% -17% no-repeat;
+    width: 50%;
+    height: 400%;
+}
+
+.comment-content-button .comment:before {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    background:  url("../images/writing-comment.png") 30% -17% no-repeat;
+    width: 50%;
+    height: 400%;
+}
+
+.comment-content-button .report {
+    margin-left: 260px;
+}
+
+.comment-content-button .report:before {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    background:  url("../images/flag.png") 45% -17% no-repeat;
+    width: 50%;
+    height: 400%;
+}
+
+.comment-content-call-container {
+    margin-top: 10px;
+    border: 1px solid #C6C6C6;
+    border-left: 3px solid red;
+    padding: 10px;
+}
+
+.buttons-reply  {
+   margin-bottom: 5px;
+}
+
+.buttons-reply a {
+    text-decoration: none;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.buttons-reply a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.scroll {
+    unicode-bidi:bidi-override;
+    direction: rtl;
+    overflow: scroll;
+    overflow-x: hidden!important;
+}
+.inside {
+
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 20px rgba(230, 230, 230, 0.30);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 19px rgba(198, 198, 198, 0.50);
+}
+
+#video-Frame-Container {
+   max-height: 285px;
+}
+
+.video-container {
+    position: relative;
+    top:-55px;
+    overflow: hidden;
+    background-color: #22505c;
+    opacity: 0.7;
+    line-height: 0;
+    width: 608px;
+    height: 50px;
+}
+
+#controls {
+    position: relative;
+    /* to bring the controls up */
+    top: 0;
+    transition: top 0.5s;
+    width: 100%;
+    height: 20px;
+}
+
+#controls #video-controls{
+    position: relative;
+    /* to bring the controls up */
+    top: -41px;
+    background-color: #0e495a;
+    opacity: 0.8;
+    width:100%;
+    height: 37px;
+}
+
+#controls #video-controls input{
+    border: none;
+    display: inline-block;
+    width: 12%;
+    height: 100%;
+    appearance: none;
+    box-shadow: none;
+    color: #0E495A;
+    opacity: 0.8;
+    font-size: 1px;
+    cursor: pointer;
+    padding: 0;
+}
+
+#controls #video-controls input[type="button"]:focus {
+    outline: none;
+}
+
+#controls #play {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    width: 50%;
+    height: 400%;
+    background: #0e5f71 url("../images/play.png")  40% 51% no-repeat ;
+    background-size: 22px 17px;
+}
+
+#controls #play:hover {
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    background: #1cafcf url("../images/play-hover.png")  40% 51% no-repeat ;
+    background-size: 22px 17px;
+}
+
+#controls #togglePause {
+    background: #0e5f71 url("../images/pause.png") 40% 51%  no-repeat ;
+    background-size: 22px 17px;
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    width: 50%;
+    height: 400%;
+}
+
+#controls #togglePause:hover {
+    background: #1cafcf url("../images/pause-hover.png") 40% 51%  no-repeat ;
+    background-size: 22px 17px;
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+}
+
+
+#controls #mute {
+    background: #0e5f71 url("../images/mute-off.png") 45% 35%  no-repeat ;
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    margin-left: 73px;
+}
+
+#controls #mute:hover {
+    background: #1cafcf url("../images/mute-off-hover.png") 45% 35%  no-repeat ;
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+}
+
+
+#controls #unmute {
+    background: #0e5f71 url("../images/mute.png") 45% 35%  no-repeat ;
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+    margin-left: 73px;
+}
+
+#controls #unmute:hover {
+    background: #1cafcf url("../images/mute-hover.png") 45% 35%  no-repeat ;
+    position: absolute;
+    top:0;
+    left:0;
+    content: " ";
+}
+
+#controls #progressBar {
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left: 160px;
+    content: " ";
+}
+
+#progressBar {
+    width: 431px;
+    height: 9px;
+    background-color: #093a45;
+    display: none;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#progressBar div {
+    height: 100%;
+    width: 0;
+    background-color: #1cafcf;
+    border-radius: 5px;
+}
+
+
+

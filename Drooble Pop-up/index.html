@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Drooble pop-up</title>
+    <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="pop-up">
+        <a href="#video-pop-up" class="video-pop-up">Open YouTube video pop-up</a>
+    </div>
+</div>
+
+<div class="overlay">
+    <div id="expanded-image-wrapper">
+        <div id="close-button"><span>x</span></div>
+        <div id="expand-video-container">
+            <div id="video-Frame-Container">
+                <div id="videoFrame">
+                    <div id="ytplayer"></div>
+                    <div id="controls">
+                        <!--<div class="video-controls" >-->
+
+                        <!--</div>-->
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttons">
+                <div class="left-buttons">
+                    <a href="#" class="video-like-button">LIKE</a>
+                    <a href="#" class="video-share-button">SHARE</a>
+                </div>
+                <div class="right-buttons">
+                    <a href="#" class="comment-edit-button>EDIT">EDIT</a>
+                    <a href="#" class="comment-delete-button>EDIT">DELETE</a>
+                </div>
+            </div>
+            <div class="comment-field">
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="comment" placeholder="comment..">
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="comments">
+                <div class="comment-author">
+                    <div class="author-image">
+                        <span></span>
+                    </div>
+                    <div class="author-detail">
+                        <h3 class="text-primary">Stoqn Daskaloff</h3>
+                        <span class="text-muted"> March 7, 2003 AT 17:34 PM</span>
+                    </div>
+                    <br /><br /><br />
+                </div>
+
+                <div class="comment-content">
+                        <article>
+                            Sed quis diam egestas, egestas maur is in, dapibus eros. Duis nisi nulla, accumsan eu libero sit amet, faucibus ornare nisi. Phasellus cursus dolor ante, at placerat est tincidunt vel. In ullamcorper pulvinar est id congue.
+                        </article>
+
+                        <div class="comment-content-container" id="nextCom">
+                            <div class="comment-content-button">
+                                <a href="#" class="like">LIKE</a>
+                                <a href="#" class="share ">SHARE</a>
+                                <a href="#" class="comment ">COMMENT</a>
+                                <a href="#" class="report ">REPORT</a>
+                            </div>
+
+                            <hr>
+                            <div class="comment-reply">
+                                <div class="buttons-reply">
+                                    <a href="#" class="text-uppercase text-muted">COMMENT</a>
+                                    <a href="#" class="text-uppercase text-muted">PHOTO</a>
+                                    <a href="#" class="text-uppercase text-muted">FEEDBACK</a>
+                                </div>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control"  id="comment-reply" placeholder="reply..">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/jquery-2.1.1.min.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>
