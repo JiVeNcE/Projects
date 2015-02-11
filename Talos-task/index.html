@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Talos Task</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div id="customContainer">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 col-lg-offset-1" >
+            <div class=" tablet-img">
+                <img class="img-responsive" src="jpg/tablet-img.png" alt="Tablet Image">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="col-lg-7">
+                <form class="bs-component">
+                    <div class="form-title">
+                        <h1>¡Muchas gracias por tu <span>participación!</span></h1>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label class="control-label">Tratamiento</label>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="custom-radio">
+                                    <input type="radio" name="radiog" id="radio1" class="css-checkbox" checked="checked"/>
+                                    <label for="radio1" class="css-label">Sr.</label>
+                                    <input type="radio" name="radiog" id="radio2" class="css-checkbox" />
+                                    <label for="radio2" class="css-label">Sra.</label>
+                                    <input type="radio" name="radiog" id="radio3" class="css-checkbox" />
+                                    <label for="radio3" class="css-label">Srta.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" name="number" id="number" type="text" placeholder="Nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" id="lastName" name="lastName" type="text" placeholder="Apellidos">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="dateOfBirth" name="dateOfBirth" placeholder="Fecha de Nacimiento">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Correo electronico">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="mobileNumber" placeholder="Número de Móvil">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="postCode" placeholder="Código Postal">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="city" placeholder="Ciudad">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="inputSmall">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                           <div class="col-md-1 checkbox">
+                               <input type="checkbox">
+                           </div>
+                            <div class="col-md-11 checkbox-text">
+                                <article>
+                                    He leído y acepto las <u>Condiciones de Uso</u> de "el Organizador" así como las de los <u>Patrocinadores.</u> Acepto de forma expresa que mis datos sean tratados para la gestión de la promoción.
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="input-group-btn">
+                           <button type="button" onclick="return validate(this.form)">CONTINUA</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.noty.packaged.min.js"></script>
+
+</body>
+</html>

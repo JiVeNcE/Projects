@@ -1,0 +1,98 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    background: url("../jpg/1.jpg")  ;
+    background-size: 1200px 600px;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin-top: 10px;
+}
+
+#wrapper .form-container {
+    margin:20px 0 20px 20px;
+    height: auto;
+    border: 1px solid #d2bdc3;
+    background: #ffffff;
+    padding: 5px;
+    float: right;
+    border-radius: 5px;
+    min-width: 360px;
+}
+
+#wrapper .form-container form{
+    padding: 1px;
+    border-radius: 4px;
+    background: #95b142;
+}
+
+#wrapper .form-container form hgroup{
+    background-color: #e76b39;
+    color: #ffffff;
+    text-align: center;
+    padding-top:10px ;
+    padding-bottom: 10px;
+}
+#wrapper .form-container form hgroup h2{
+    color: #650603;
+    font-weight: 900;
+}
+
+#wrapper .form-container form .row{
+    margin:0px;
+    padding-left: 2px;
+    padding-top: 8px ;
+    padding-bottom: 8px;
+}
+
+#wrapper .form-container form input, select{
+    border-radius: 5px;
+    border: 1px;
+    padding: 5px;
+}
+
+#wrapper .form-container form .btn-container {
+    margin: 5px;
+}
+#wrapper .form-container form .form-button {
+
+    background-color: #eac431;
+    padding: 10px 70px 10px 70px;
+    border-radius:6px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+#wrapper .form-container form .form-button:hover {
+    background-color: #e76b39;
+    transition: 700ms;
+}
+
+.img-container  {
+    width: 1100px ;
+    height: 900px;
+    position: relative;
+}
+
+.img-container img {
+    width: 100% ;
+}
+
+.form-container {
+    position: relative;
+
+}

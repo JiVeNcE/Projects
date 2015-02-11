@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+</head>
+<body>
+
+<section id="header">
+    <div id="wrapper">
+        <row>
+            <div class="col-md-8">
+                <article class="header-content">
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article>
+                    <div class="form-container">
+                        <form name="form" id="form"  method="post">
+                            <hgroup>
+                                <p>It takes less then a minute, tell us where to send your</p>
+                                <h2>TRIAL PACKAGE</h2>
+                            </hgroup>
+                            <div class="row">
+                                <!-- First Name -->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            First Name:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="First Name" class="col-lg-10" name="firstName" value="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Last Name -->
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            Last Name:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="Last Name" class="col-lg-10" name="lastName" value="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Email Address -->
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            Email:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="email" placeholder="Email Address" class="col-lg-10" name="email" value="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Phone Number -->
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            Phone:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="tel" placeholder="Your Phone Number" class="col-lg-10" onkeydown="return onlyNumbers(event,'phone')" id="fields_phone" name="phone" value="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Address -->
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            Address:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="Your Address" class="col-lg-10" name="address1" value="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- City -->
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            City:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="Your City" class="col-lg-10" name="city" value="">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- State -->
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            State:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+
+                                        <select class="col-lg-10" name="state">
+                                            <option value="" onclick="">Select State</option>
+                                            <option value="AL" onclick="">Alabama (AL)</option>
+                                            <option value="AK" onclick="">Alaska (AK)</option>
+                                            <option value="AS" onclick="">American Samoa (AS)</option>
+                                            <option value="AZ" onclick="">Arizona (AZ)</option>
+                                            <option value="AR" onclick="">Arkansas (AR)</option>
+                                            <option value="CA" onclick="">California (CA)</option>
+                                            <option value="CO" onclick="">Colorado (CO)</option>
+                                            <option value="CT" onclick="">Connecticut (CT)</option>
+                                            <option value="DE" onclick="">Delaware (DE)</option>
+                                            <option value="DC" onclick="">District of Columbia (DC)</option>
+                                            <option value="FL" onclick="">Florida (FL)</option>
+                                            <option value="GA" onclick="">Georgia (GA)</option>
+                                            <option value="GU" onclick="">Guam (GU)</option>
+                                            <option value="HI" onclick="">Hawaii (HI)</option>
+                                            <option value="ID" onclick="">Idaho (ID)</option>
+                                            <option value="IL" onclick="">Illinois (IL)</option>
+                                            <option value="IN" onclick="">Indiana (IN)</option>
+                                            <option value="IA" onclick="">Iowa (IA)</option>
+                                            <option value="KS" onclick="">Kansas (KS)</option>
+                                            <option value="KY" onclick="">Kentucky (KY)</option>
+                                            <option value="LA" onclick="">Louisiana (LA)</option>
+                                            <option value="ME" onclick="">Maine (ME)</option>
+                                            <option value="MD" onclick="">Maryland (MD)</option>
+                                            <option value="MA" onclick="">Massachusetts (MA)</option>
+                                            <option value="MI" onclick="">Michigan (MI)</option>
+                                            <option value="MN" onclick="">Minnesota (MN)</option>
+                                            <option value="MS" onclick="">Mississippi (MS)</option>
+                                            <option value="MO" onclick="">Missouri (MO)</option>
+                                            <option value="MT" onclick="">Montana (MT)</option>
+                                            <option value="NE" onclick="">Nebraska (NE)</option>
+                                            <option value="NV" onclick="">Nevada (NV)</option>
+                                            <option value="NH" onclick="">New Hampshire (NH)</option>
+                                            <option value="NJ" onclick="">New Jersey (NJ)</option>
+                                            <option value="NM" onclick="">New Mexico (NM)</option>
+                                            <option value="NY" onclick="">New York (NY)</option>
+                                            <option value="NC" onclick="">North Carolina (NC)</option>
+                                            <option value="ND" onclick="">North Dakota (ND)</option>
+                                            <option value="OH" onclick="">Ohio (OH)</option>
+                                            <option value="OK" onclick="">Oklahoma (OK)</option>
+                                            <option value="OR" onclick="">Oregon (OR)</option>
+                                            <option value="PA" onclick="">Pennsylvania (PA)</option>
+                                            <option value="PR" onclick="">Puerto Rico (PR)</option>
+                                            <option value="RI" onclick="">Rhode Island (RI)</option>
+                                            <option value="SC" onclick="">South Carolina (SC)</option>
+                                            <option value="SD" onclick="">South Dakota (SD)</option>
+                                            <option value="TN" onclick="">Tennessee (TN)</option>
+                                            <option value="TX" onclick="">Texas (TX)</option>
+                                            <option value="UT" onclick="">Utah (UT)</option>
+                                            <option value="VT" onclick="">Vermont (VT)</option>
+                                            <option value="VA" onclick="">Virginia (VA)</option>
+                                            <option value="WA" onclick="">Washington (WA)</option>
+                                            <option value="WV" onclick="">West Virginia (WV)</option>
+                                            <option value="WI" onclick="">Wisconsin (WI)</option>
+                                            <option value="WY" onclick="">Wyoming (WY)</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Zip -->
+                                    <div class="col-md-4">
+                                        <label class="inline-right">
+                                            Zip Code:
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="text" placeholder="Zip Code" class="col-lg-10"  value="">
+                                    </div>
+                                </div>
+                        </div>
+
+                            <div class="btn-container">
+                                <button class="btn-block form-button" onclick="return validate(this.form)">Claim Your Bottle!</button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </row>
+    </div>
+
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+
+</body>
+</html>
