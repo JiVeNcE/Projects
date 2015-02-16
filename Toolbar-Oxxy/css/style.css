@@ -1,0 +1,84 @@
+.toolbar-container  {
+    width: 310px;
+    height: 80px;
+    background-color: #234465;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+
+.toolbar-container  h3{
+    margin-top: 2px;
+    text-align:center;
+    color: #ff9c00;
+}
+
+.btn-container .buttons {
+    background-color: #234465;
+    border: 2px solid #ff9c00;
+    padding: 5px;
+    color:#ffffff;
+    width: 100px;
+    margin-left: 27px;
+    float: left;
+    text-align: center;
+}
+.btn-container .buttons:hover {
+    background-color: #ff9c00;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+
+.create-button-class{
+    width: 130px;
+    background-color: #db4c2e;
+    border: 2px solid #234465;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: left;
+    text-align:center;
+    color: #ffffff;
+}
+.create-button-class a:link  {
+    color: #ffffff;
+}
+
+.create-button-class a:visited {
+    color: #ffffff;
+}
+
+.create-button-class a:hover {
+    color: #0d63ab;
+}
+
+.create-text-class{
+    width: 130px;
+    height: 30px;
+    background-color: #0d63ab;
+    border: 2px solid #ff9c00;
+    line-height: 29px;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: left;
+    text-align:center;
+    color: #ffffff;
+    padding: 0px;
+    text-align: center;
+}
+
+
+#colorSelector {
+    position: relative;
+    width: 36px;
+    height: 36px;
+
+}
+#colorSelector div {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+
+}
