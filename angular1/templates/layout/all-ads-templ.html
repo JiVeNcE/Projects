@@ -1,0 +1,53 @@
+<div class="row" ng-if="loading">
+    <div class="spinner" >
+        <img src="img/progressbar1.gif" alt="" class="spinner-gif">
+    </div>
+</div>
+
+<div data-ng-cloak>
+    <div class="row">
+        <div ng-repeat="property in properties| filter: filterProperties | filter: filterProperties2">
+            <div class="panel panel-primary">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-2 panel-body">
+                                <div class="col-md-2 image-container">
+                                    <img src="" data-ng-src="{{property.imageDataUrl}}" class="ad-image img-responsive">
+                                    <img src="" alt="" data-ng-if="!property.imageDataUrl" class="ad-image img-responsive" data-ng-src="img/no_image.jpg"/>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 panel-body">
+                                <div> Address: {{property.address}}</div>
+                                <div> Rooms: {{property.rooms}}</div>
+                                <div> Price: {{property.price}}</div>
+                                <button data-ng-click="openModal(property.id)">Viwings</button>
+                            </div>
+
+                            <div class="col-md-6 panel-body">
+                                 <span class="date-panel text-info pull-right">
+                                     Description
+                                 </span>
+                                <p>
+                                    {{property.description}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="row">
+    <div class='form-group'><a type="submit"  data-ng-click="addSchedule()" class="btn btn-ads" data->Add Viewing</a>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
