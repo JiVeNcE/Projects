@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="adsModule" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Estate Management System</title>
+</head>
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/app.css" />
+<link rel="stylesheet" href="dist/angular-notify.min.css" />
+<link rel="stylesheet" href="lib/loading-bar.css" />
+<link rel="stylesheet" href="css/fileinput.css" />
+<link rel="stylesheet" href="css/loader.css" />
+<link rel="stylesheet" href="css/datetimepicker.css">
+
+<body>
+
+
+<div id="header">
+	<div ng-include="'templates/layout/header.html'"></div>
+</div>
+
+<div id="wrapper">
+	<div class="ng-view" >
+	</div>
+</div>
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.min.js"></script>
+<script src="lib/angular/angular-resource.js"></script>
+<script src="lib/angular/angular-cookies.js"></script>
+<script src="lib/ui.bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+<script type="text/javascript" src="lib/moment.js"></script>
+<script type="text/javascript" src="lib/datetimepicker.js"></script>
+<script type="text/javascript" src="lib/datetimepicker.templates.js"></script>
+
+
+
+<script src="js/app.js"></script>
+
+<script src="js/services/propertiesData.js"></script>
+
+
+<script src="js/controllers/Main-Controller.js"></script>
+<!--<script src="js/controllers/RegisterController.js"></script>-->
+<!--<script src="js/controllers/LoginController.js"></script>-->
+<!--<script src="js/controllers/RightSidebarController.js"></script>-->
+<!--<script src="js/controllers/App-Controller.js"></script>-->
+<!--<script src="js/controllers/UserPublishNewAdController.js"></script>-->
+<!--<script src="js/controllers/UserAdController.js"></script>-->
+<!--<script src="js/controllers/UserDeleteAdController.js"></script>-->
+<!--<script src="js/controllers/UserEditAdController.js"></script>-->
+<!--<script src="js/controllers/EditUserProfileController.js"></script>-->
+<script src="js/controllers/FilterByRoomsController.js"></script>
+<script src="js/controllers/FilterByAddressController.js"></script>
+<script src="js/controllers/ModalInstanceCtrl.js"></script>
+
+<script src="js/directives/convertToNumber.js"></script>
+<script src="js/directives/stringToTimestamp.js"></script>
+<script src="js/directives/formatDateTime.js"></script>
+
+
+<script src="dist/angular-notify.js"></script>
+<script src="lib/loading-bar.js"></script>
+
+</body>
+</html>
