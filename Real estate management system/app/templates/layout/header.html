@@ -1,0 +1,22 @@
+<div class="navbar navbar-default navbar-fixed-top"  >
+    <div class="navbar-header ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-6" ng-controller="FilterByAddressController">
+                    <div class="search-query-container">
+                       <input type="text" placeholder="Search" data-ng-model="address_query" ng-change="addressSearchQuery()"/>
+                    </div>
+                </div>
+                <div class="col-md-6" ng-controller="FilterByRoomsController">
+                    <div class="filter-rooms-container">
+                        <label>Rooms:</label>
+                        <select data-ng-model="filterRooms" ng-change="roomsSelectionChanged()">
+                            <option value="{{undefined}}">All</option>
+                            <option ng-repeat="n in [].constructor(20) track by $index">{{$index+1}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

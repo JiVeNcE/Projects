@@ -1,0 +1,61 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "address": "London Street 200",
+      "rooms": 3,
+      "price": "$150 000",
+      "imageDataUrl": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+    },
+    {
+      "id": 2,
+      "address": "London Street 400",
+      "rooms": 5,
+      "price": "$250 000",
+      "imageDataUrl": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+    },
+    {
+      "id": 3,
+      "address": "London Street 200",
+      "rooms": 3,
+      "price": "$250 0000",
+      "imageDataUrl": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+    }
+  ],
+  "scheduleProperties": [
+    {
+      "name": "Adams Valdo",
+      "time": "2017-03-07T07:25:00.000Z",
+      "hostId": 1,
+      "propertyId": 2,
+      "id": 8
+    },
+    {
+      "name": "Baker Usman",
+      "time": "2017-03-16T12:30:00.000Z",
+      "hostId": 1,
+      "propertyId": 2,
+      "id": 9
+    },
+    {
+      "name": "Clark Trott",
+      "time": "2017-03-16T12:30:00.000Z",
+      "hostId": 1,
+      "propertyId": 2,
+      "id": 9
+    }
+  ],
+  "hosts": [
+    {
+      "id": 1,
+      "name": "Ivaylo"
+    },
+    {
+      "id": 2,
+      "name": "Stefan"
+    }
+  ]
+}

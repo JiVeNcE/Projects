@@ -1,0 +1,140 @@
+#wrapper {
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-top: 40px;
+}
+
+.navbar-default {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.navbar-header {
+    float: none;
+}
+.navbar-header .container {
+    margin-top: 9px;
+}
+
+.panel-primary {
+    border-color: black;
+}
+
+.filter-rooms-container {
+    text-align: right;
+}
+.filter-rooms-container select {
+    width: 50px;
+}
+
+.search-query-container input {
+    width: 250px;
+}
+
+.add-description-container, .add-description-container p{
+    font-size: 14px;
+}
+
+
+.modal-dialog .modal-header{
+    text-align: right;
+}
+
+.modal-dialog .panel-body table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.modal-dialog .panel-body table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+}
+
+.modal-dialog .panel-body table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+
+.modal-dialog .panel-body table thead tr {
+    height: 40px;
+    background-color: #b9b9b9;
+}
+
+
+.modal-dialog .panel-body table th {
+    width: 150px;
+}
+
+.modal-dialog .panel-body table td {
+    position: relative;
+
+}
+
+.modal-dialog .panel-body table th:first-child {
+    width: 200px;
+}
+
+.modal-dialog .panel-success {
+    border: none;
+}
+
+.add-new-schedule {
+    background-color: #fafafa;
+    height: 60px;
+}
+
+.add-new-schedule > div {
+    margin-top: 9px;
+}
+
+.add-new-schedule input, .add-new-schedule select{
+    height: 34px;
+}
+
+.add-new-schedule .datepicker-input {
+    width: 116px;
+}
+
+.delete-schedule {
+    position: absolute;
+    left: 140px;
+    cursor: pointer;
+    top: 12px;
+    background-image: url("../img/delete_icon.svg");
+    background-size: 25px 21px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 21px;
+}
+
+.ad-image {
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.image-container  {
+    width: 100%;
+    margin-left: 10px;
+    padding: 0;
+    height: auto;
+}
+
+.spinner  {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:400px;
+    bottom: 0;
+    left: 0;
+    right: 10%;
+    margin:auto;
+}
+
+.spinner-gif{
+    width: 80px;
+    height: 80px;
+}

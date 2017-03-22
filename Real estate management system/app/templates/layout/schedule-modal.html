@@ -1,0 +1,64 @@
+<div class="modal-header">
+    <button ng-click="closeModal()">Close</button>
+</div>
+
+<div class="modal-body">
+    <div class="panel panel-success">
+        <div class='panel-body'>
+            <div class='row'>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Host</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="schedule in schedules" >
+                            <td>{{schedule.name}}</td>
+                            <td>{{schedule.time | date:"ha"}}</td>
+                            <td>
+                                <div>
+                                    <span>{{ getDisplayValue(schedule.hostId) }}</span>
+                                    <a type="submit" data-ng-click="deleteSchedule(schedule)" class="delete-schedule"></a>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class='row add-new-schedule'>
+                <div class="col-md-5">
+                    <input type="text" data-ng-model="scheduleData.name" placeholder="name" />
+                </div>
+                <div class="col-md-4">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" id="dropdown2" role="button" data-toggle="dropdown" data-target="#" href="javascript:;">
+                            <div class="input-group">
+                                <input type="text" class="form-control datepicker-input" data-ng-model="scheduleData.time" format-date-time>
+                                <span class="input-group-addon">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </span>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <datetimepicker data-ng-model="scheduleData.time" data-datetimepicker-config="{ dropdownSelector: '#dropdown2' }"/>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <select ng-if="hosts" ng-init="scheduleData.hostId = hosts[0].id" data-ng-model="scheduleData.hostId" convert-to-number>
+                        <option ng-repeat="host in hosts" value="{{host.id}}">{{host.name}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class='form-group'>
+                    <button data-ng-click="addSchedule()">Add Viewing</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

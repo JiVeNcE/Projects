@@ -1,0 +1,50 @@
+<div class="row" ng-if="loading">
+    <div class="spinner" >
+        <img src="img/progressbar1.gif" alt="" class="spinner-gif">
+    </div>
+</div>
+
+<div data-ng-cloak>
+    <div class="row">
+        <div ng-repeat="property in properties| filter: selectedRoomsFilter | filter: addressSearchQueryFilter">
+            <div class="panel panel-primary">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-2 panel-body">
+                                <div class="col-md-2 image-container">
+                                    <img data-ng-if="property.imageDataUrl" data-ng-src="{{property.imageDataUrl}}" class="ad-image img-responsive">
+                                    <img data-ng-if="!property.imageDataUrl" class="ad-image img-responsive" data-ng-src="img/no_image.jpg"/>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 panel-body">
+                                <div> <strong>Address:</strong> {{property.address}}</div>
+                                <div> <strong>Rooms:</strong> {{property.rooms}}</div>
+                                <div> <strong>Price:</strong> {{property.price}}</div>
+                                <button data-ng-click="openModal(property.id)">Viewing</button>
+                            </div>
+
+                            <div class="col-md-6 panel-body">
+                                <div class="add-description-container">
+                                     <div>
+                                         <strong>Description:</strong>
+                                     </div>
+                                    <p>
+                                        {{property.description}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
