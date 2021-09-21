@@ -1,0 +1,22 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.footer {
+  font-size: 1rem;
+  @include flex-center;
+  height: 7rem;
+  padding: 2rem;
+  background: $background-1;
+  margin-top: auto;
+
+  .navigation {
+    display: flex;
+  }
+
+  .copyright {
+    font-size: 1.3em;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: $text-1;
+  }
+}

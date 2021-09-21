@@ -1,0 +1,16 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.loading {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  @include flex-center;
+
+  .label {
+    font-size: 4em;
+    font-weight: 700;
+    color: $text-3;
+  }
+}

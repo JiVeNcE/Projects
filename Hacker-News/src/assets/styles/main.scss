@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // Default font-size = 10px
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: $background-1 transparent;
+    scrollbar-width: thin;
+    user-select: none;
+    
+    ::-webkit-scrollbar {
+        width: .8rem;
+        background-color: transparent; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: $text-3;
+    }
+    
+    ::selection {
+        background-color: $text-3;
+        color: $text-1;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: $background-light-1;
+    color: $text-1;
+}
+    

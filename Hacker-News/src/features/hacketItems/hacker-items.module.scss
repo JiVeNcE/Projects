@@ -1,0 +1,34 @@
+@import '../../assets/styles/variables.scss';
+
+.hacker-items-list {
+  font-size: 1rem;
+  flex: 1;
+  overflow-x: scroll;
+  padding: 1rem 0;
+
+  &::-webkit-scrollbar {
+    width: .3rem;
+  }
+}
+
+
+.hacker-item {
+  font-size: 1rem;
+  flex: 1;
+  overflow-x: scroll;
+  padding: 1rem;
+  min-height: 220px;
+
+  .title {
+    min-height: 80px;
+    text-align: center;
+    h2 {
+      color: $text-5;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+  &::-webkit-scrollbar {
+    width: .3rem;
+  }
+}
